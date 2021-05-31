@@ -21,7 +21,7 @@ function loader:detectGame()
 	if detectedGame then
 	game.StarterGui:SetCore("ChatMakeSystemMessage", {
 		Text = "Supported Game!",
-        Font = Enum.Font.Code;,
+        Font = Enum.Font.Code,
 		Color = green,
 	})
 		return detectedGame

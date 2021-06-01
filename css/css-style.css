@@ -1,0 +1,135 @@
+body {
+  background: #1e1e1e;
+  font-family: 'MV Boli';
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.logo {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  z-index: 10;
+}
+
+
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  min-width: 100% !important;
+  opacity: 0;
+}
+
+.main .title {
+  font-size: 4em;
+  font-weight: bolder;
+  margin-top: -20px;
+  text-align: center;
+  -webkit-text-shadow: 0 2px 25px rgb(25, 173, 218);
+          text-shadow: 0 2px 25px rgb(76, 139, 221);
+}
+
+.main .desc {
+  font-family: 'Lexend';
+  font-weight: bolder;
+  margin-top: -20px;
+  text-align: center;
+}
+
+
+
+.discord-btn {
+  font-family: 'Lexend';
+  background: transparent;
+  color: white;
+  font-weight: bolder;
+  padding: 0.5em 1em;
+  font-size: 1.1em;
+  width: 114px;
+  height: 45px;
+  border: none;
+  -webkit-box-shadow: 0 2px 25px rgb(25, 173, 218);
+          box-shadow: 0 2px 25px rgb(76, 139, 221);
+  background: rgb(101, 148, 211);
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+.discord-btn:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+          background: rgb(87, 109, 236);
+}
+
+.discord-btn:active {
+  -webkit-transform: scale(1.2, 1);
+          transform: scale(1.2, 1);
+}
+
+
+.script-btn {
+  font-family: 'Lexend';
+  background: transparent;
+  color: white;
+  font-weight: bolder;
+  padding: 0.5em 1em;
+  font-size: 1.1em;
+  width: 114px;
+  height: 45px;
+  border: none;
+  -webkit-box-shadow: 0 2px 25px rgb(207, 113, 36);
+          box-shadow: 0 2px 25px rgb(207, 113, 36);
+  background: rgb(207, 113, 36);
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+.script-btn:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+          background: rgb(221, 106, 12);
+}
+
+.script-btn:active {
+  -webkit-transform: scale(1.2, 1);
+          transform: scale(1.2, 1);
+}
+

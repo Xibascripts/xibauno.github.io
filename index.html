@@ -1,60 +1,121 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Discord Server Redirect</title>
-    <style>
-        @keyframes loader {
-            0% {
-                opacity: 0;
-                -webkit-transition: all .5s ease-in-out;
-            }
-            30% {
-                width: 100%;
-                -moz-transition: all .5s ease-in-out;
-            }
-            60% {
-                opacity: 1;
-                -o-transition: all .5s ease-in-out;
-            }
-            100% {
-                width: 100%;
-                transition: all .5s ease-in-out;
-            }
-        }
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onlysense</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-        @keyframes redirectText {
-            from {
-                background-position: 0%;
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&amp;display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/css-style.css">
+    
+    
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="onlysense">
+    <meta property="og:title" content="onlysense">
+    <meta property="og:description" content="Get good">
+    <meta property="og:image" content="images/2word">
+    <script>
+        
+
+        function loader(){
+            document.body.style.opacity='1'
+          var style = document.createElement('style');
+          style.innerHTML = `
+            @keyframes FadeOut{
+                0%{opacity:1;}
+                100%{opacity:0;}
             }
-            to {
-                background-position: 100%;
+            @keyframes FadeIn{
+                0%{opacity:0;}
+                100%{ opacity:0.15;}
             }
+            @keyframes bounceIn{
+                0%{top:-15%;opacity:0;}
+                100%{top:50%;opacity:1;}
+            }
+            @keyframes bounceIn2{
+                0%{top:80%;opacity:0;}
+                50%{top:65%;opacity:0.2;}
+                100%{top:60%;opacity:1;}
+            }
+            .logo{
+                animation-name:bounceIn;
+                animation-duration:1000ms;
+                animation-timing-function:ease;
+                opacity:1;
+                
+            }
+            .loader-container{
+                opacity:1;
+                animation-name:FadeOut;
+                animation-duration:1000ms;
+                animation-delay: 1000ms;
+                animation-timing-function:ease;
+
+            }
+            .main{
+                opacity:0;
+                transition-delay:2100ms;
+                transition 2000ms; 
+                opacity:1;
+                position: absolute;
+                transform: translate(-50%,-50%);
+                left:50%;
+                top:50%;
+            }
+            .bg{
+                opacity:0;
+                transition:10s;
+                opacity:0.15;
+            }
+          `;
+          document.head.appendChild(style);
+          var element = document.getElementById("bgvideo");
+          element.play();
+          
+          setTimeout(() => {
+                var element = document.getElementById("loader-container");
+                element.remove(); 
+                var element = document.getElementById("music");
+                element.play();
+                element.volume = 7;
+            }, 1750);
         }
-    </style>
-    <link rel="stylesheet" type="text/css" href="../src/style.css">
-    <meta http-equiv="refresh" content="3; url=https://discord.gg/kF8Q8FvPDg">
+        
+        
+    </script>
+
 </head>
-  
-<body>
+<body onload="loader()">
+    <div class="bg" style="position: absolute;z-index: 0;"></div>
+    <div class="bg">
+        <video id="bgvideo" loop>
+            
+          <source src="data/showcase.mp4" type="video/mp4" alt="Showcase"></source>
+          <script>
+            const vid = document.getElementById('bgvideo');
+            app.videoElement = vid;
+          </script>
+        </video>
+    </div>
 
-<div class="rd-box">
-    <h1 class="tx-count">Please wait 3 seconds, we're redirecting you!</h1>
-    <h5 class="tx-inst"><a class="tx-redir" href="https://discord.gg/kF8Q8FvPDg">Click Here</a> for instant</h5>
-</div>
+      <audio id="music" loop>
+        <source src="data/Music.mp3" type="audio/mpeg">
+      </source></audio>
 
-<div class="footer">
-    <ul>
-        <li style="display:inline-block; color:#999999;">Design built by <a class="rimuru" href="https://anilyn.fun/discord">Rimuru</a> <a>@ All Rights Reserved</a></li>
-    </ul>
-</div>
+      <div class="loader-container" id="loader-container">
+        <img src="images/2word.png" class="logo" alt="">
+      </div>
 
-<canvas id="stars" width="1562" height="944">
-  <script src="../src/delaunay.js"></script>
-  <script src="../src/background.js"></script>
-</canvas>
-<script src="../src/improvs.js"></script>
-  
+
+      <div class="main">
+        <p class="title">onlysense</p>
+        <p class="desc">Get Good</p>
+        <button class="script-btn" onclick="location.href = 'script'">Script</button>
+        <button class="discord-btn" onclick="location.href = 'sense'">Discord</button>
+      </div>
 </body>
 </html>

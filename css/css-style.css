@@ -56,7 +56,6 @@ body {
   color: white;
   min-width: 100% !important;
   opacity: 0;
-  margin-bottom:1em;
 }
 
 .main .title {
@@ -107,6 +106,7 @@ body {
 
 
 .script-btn {
+  margin-top: 2px;
   font-family: 'Lexend';
   background: transparent;
   color: white;

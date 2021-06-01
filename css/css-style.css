@@ -106,7 +106,6 @@ body {
 
 
 .script-btn {
-  margin-top: 2px;
   font-family: 'Lexend';
   background: transparent;
   color: white;
@@ -121,6 +120,7 @@ body {
   background: rgb(207, 113, 36);
   -webkit-transition: 0.1s ease-out;
   transition: 0.1s ease-out;
+  
 }
 
 .script-btn:hover {
@@ -133,4 +133,3 @@ body {
   -webkit-transform: scale(1.2, 1);
           transform: scale(1.2, 1);
 }
-

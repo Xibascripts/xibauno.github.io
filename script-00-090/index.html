@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background: #1e1e1e;
+  font-family: 'MV Boli';
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.input {
+background: transparent;
+opacity: 0;
+height:1px;
+width: 1px
+}
+
+.button {
+  font-family: 'Lexend';
+  background: transparent;
+  color: white;
+  font-weight: bolder;
+  padding: 0.5em 1em;
+  font-size: 1.1em;
+  width: 134px;
+  height: 45px;
+  border: none;
+  -webkit-box-shadow: 0 2px 25px rgb(207, 113, 36);
+          box-shadow: 0 2px 25px rgb(207, 113, 36);
+  background: rgb(207, 113, 36);
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+  margin-top:22px;
+  margin-left:12px;
+}
+.button:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+          background: rgb(221, 106, 12);
+}
+
+.button:active {
+  -webkit-transform: scale(1.2, 1);
+          transform: scale(1.2, 1);
+}
+
+</style>
+</head>
+<input class="input" type="text" value="loadstring(game:HttpGet'https://xiba.uno/onlysense/Loader.lua')()" id="myInput">
+<button class="button"onclick="CopyScript()">Copy Script</button>
+
+
+<script>
+function CopyScript() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+}
+</script>
+
+</body>
+</html>

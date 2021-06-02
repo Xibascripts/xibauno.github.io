@@ -6,7 +6,7 @@
     .input {
     opacity: 0;
     height:3px;
-    width: 140px
+    width: 40px
     }
     
     </style>
@@ -116,8 +116,9 @@
         
         <p class="title">thank you for supporting</p>
         <button class="copy-btn" onclick="CopyScript()">Copy Script</button>
-        <input class="input" type="text" value="loadstring(game:HttpGet'https://xiba.uno/onlysense/Loader.lua')()" id="myInput">
+
       </div>
+      <input class="input" type="text" value="loadstring(game:HttpGet'https://xiba.uno/onlysense/Loader.lua')()" id="myInput">
       <script>
         function CopyScript() {
           var copyText = document.getElementById("myInput");

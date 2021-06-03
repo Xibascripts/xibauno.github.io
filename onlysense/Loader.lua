@@ -34,8 +34,9 @@ function loader:detectGame()
     loadstring(game:HttpGet"https://xiba.uno/onlysense/Games/Universal.lua")()
 	end
 end
-
-loader:registerGame(286090429, "Arsenal", "https://xiba.uno/onlysense/Games/Arsenal.lua")
+a="https://xiba.uno/onlysense/Games"
+loader:registerGame(286090429, "Arsenal", a.."/Arsenal.lua")
+loader:registerGame(3527629287, "Big Paintball", a.."/BigPaintball.lua")
 
 local detectedGame = loader:detectGame()
 

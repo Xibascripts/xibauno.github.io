@@ -37,6 +37,7 @@ end
 a="https://xiba.uno/onlysense/Games"
 loader:registerGame(286090429, "Arsenal", a.."/Arsenal.lua")
 loader:registerGame(3527629287, "Big Paintball", a.."/BigPaintball.lua")
+loader:registerGame(183364845, "Speedrun 4", a.."/Speedrun4.lua")
 
 local detectedGame = loader:detectGame()
 

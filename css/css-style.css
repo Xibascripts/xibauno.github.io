@@ -181,6 +181,27 @@ body {
           opacity: 1;
 }
 
+.credits {
+  font-family: 'Lexend';
+  background: transparent;
+  color: rgb(225, 176, 235);
+  font-weight: bolder;
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+  width: 94px;
+  height: 35px;
+  border: none;
+  opacity: 0.5;
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.3s ease-out;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+  -webkit-text-shadow: 0 2px 25px rgb(212, 25, 218);
+  text-shadow: 0 2px 25px rgb(163, 76, 221);
+}
+
+
 .copy-btn {
   font-family: 'Lexend';
   background: transparent;

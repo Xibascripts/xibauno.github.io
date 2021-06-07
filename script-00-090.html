@@ -116,13 +116,21 @@
         
         <p class="title">thank you for supporting</p>
         <button class="copy-btn" onclick="CopyScript()">Copy Script</button>
-        
-  
+        <button class="copy-btn" onclick="CopyKey()">Copy Key</button>
       </div>
       <input class="input" type="text" value="loadstring(game:HttpGet'https://xiba.uno/onlysense/Loader.lua')()" id="myInput">
+      <input class="input" type="text" value="loadstring(game:HttpGet'https://xiba.uno/onlysense/Loader.lua')()" id="myInpu2">
       <script>
         function CopyScript() {
           var copyText = document.getElementById("myInput");
+          copyText.select();
+          copyText.setSelectionRange(0, 99999)
+          document.execCommand("copy");
+        }
+        </script>
+          <script>
+        function CopyKey() {
+          var copyText = document.getElementById("myInput2");
           copyText.select();
           copyText.setSelectionRange(0, 99999)
           document.execCommand("copy");
